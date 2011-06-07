@@ -1,0 +1,15 @@
+﻿<Window x:Class="SimplePortScan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simple Port Scanner" Height="350" Width="525">
+    <Grid>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,46,0,0" Name="textBoxTarget" VerticalAlignment="Top" Width="120" TextChanged="textBoxTarget_TextChanged" />
+        <Label Content="target" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="labelTarget" VerticalAlignment="Top" />
+        <Button Content="Start" Height="23" HorizontalAlignment="Left" Margin="57,276,0,0" Name="buttonStart" VerticalAlignment="Top" Width="75" Click="buttonStart_Click" IsEnabled="False" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,109,0,0" Name="textBoxStartingPort" VerticalAlignment="Top" Width="120" TextChanged="textBoxStartingPort_TextChanged" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,172,0,0" Name="textBoxEndingPort" VerticalAlignment="Top" Width="120" TextChanged="textBoxEndingPort_TextChanged" />
+        <Label Content="starting port" Height="28" HorizontalAlignment="Left" Margin="12,75,0,0" Name="labelStartPort" VerticalAlignment="Top" />
+        <Label Content="ending port" HorizontalAlignment="Left" Margin="12,138,0,0" Name="labelEndPort" Height="28" VerticalAlignment="Top" />
+        <TextBox Height="287" HorizontalAlignment="Left" Margin="138,12,0,0" Name="textBoxResults" VerticalAlignment="Top" Width="353" IsEnabled="True" IsReadOnly="True" />
+    </Grid>
+</Window>
